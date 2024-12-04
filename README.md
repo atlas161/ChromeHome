@@ -1,2 +1,2 @@
 # ChromeHome
-ChromeHome - Page HTML/CSS de nouvel onglet (new tab page)
+ChromeHome - Ma première page HTML/CSS créée dans le but d'une page de nouvel onglet personnel. ("new tab page")
