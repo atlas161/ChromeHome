@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Helvitica;
+    /* src: url('medias/typo/HelveticaNeueHv.ttf') format('truetype');
+    src: url('medias/typo/HelveticaNeueIt.ttf') format('truetype'); */
+    src: url('medias/typo/HelveticaNeueUltraLightv130.ttf') format('truetype');
+    /* src: url('medias/typo/Light.ttf') format('truetype'); */
+}
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#backimg,
+#backdegrader {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#backimg {
+    z-index: 1;
+}
+
+#backdegrader {
+    z-index: 2;
+}
+
+/* Styles pour les images de "frontimg" */
+#frontimg {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    /* Taille initiale de l'image */
+    height: 200px;
+    max-width: 100%;
+    /* Empêche le dépassement de la taille maximale de la fenêtre */
+    max-height: 100%;
+}
+
+#dragon {
+    position: absolute;
+    width: 600px;
+    /* Assure que l'image remplit son conteneur */
+    height: auto;
+    object-fit: contain;
+    left: 50%;
+    /* Centre l'image horizontalement */
+    transform: translateX(-50%);
+    /* Décale l'image de moitié vers la gauche pour la centrer */
+}
+
+#bitmojiimg {
+    position: absolute;
+    /* Positionne l'image "bitmoji" de manière indépendante */
+    top: 75%;
+    /* Ajuster la position verticale de l'image "bitmoji" */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 55%;
+    height: auto;
+    border-radius: 200px; /* Ajoute un léger arrondi aux coins */
+    border: 10px solid transparent;
+    transition: box-shadow 0.3s; /* Ajoute une transition pour une animation fluide */
+}
+
+#toolbar {
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* Augmente le z-index pour placer la toolbar au-dessus */
+}
+
+#toolbarimg {
+    width: 550px; /* Ajoute la largeur désirée */
+    height: auto; /* Garde le ratio hauteur/largeur */
+}
+
+#icontoolmiddle {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 11%;
+    /* Positionne icontool sous la toolbar avec une marge */
+    left: 49.8%;
+    transform: translateX(-50%);
+    z-index: 3;
+    /* Assure que icontool est au-dessus de toolbarimg */
+}
+
+#icontoolmiddle img {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-left: 6.7px;
+    margin-right: 6.7px;
+    /* Ajuste la marge entre les icônes */
+    max-width: 50px;
+    height: auto;
+    transition: box-shadow 0.3s; /* Ajoute une transition pour une animation fluide */
+    border-radius: 11px; /* Ajoute un léger arrondi aux coins */
+}
+
+#icontoolmiddle img:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8) /* Ajoute une ombre au survol */
+}
+#searchbartool {
+    position: fixed;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* Augmente le z-index pour placer la toolbar au-dessus */
+}
+#toolbarimg2 {
+    width: 550px; /* Ajoute la largeur désirée */
+    height: auto; /* Garde le ratio hauteur/largeur */
+}
+#searchbar {
+    position: fixed;
+    top: 52.25%;
+    left: 49.8%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 490px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white; /* Ajoute un fond blanc */
+}
+
+#searchButton {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 60px; /* Définissez la largeur souhaitée */
+    height: 37px; /* Définissez la hauteur souhaitée */
+    border-radius: 14px; /* Ajoute un léger arrondi aux coins */
+    overflow: hidden; /* Cache tout contenu dépassant du bouton */
+}
+
+#searchButton img {
+    width: 40%; /* Ajuste la largeur de l'image pour remplir le bouton */
+    height: auto; /* Garde le rapport hauteur/largeur */
+    vertical-align: middle;
+}
+
+#searchInput {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    flex: 1;
+    padding: 7px;
+    color: rgb(45, 45, 45);
+    background-color: #ffffffde;
+    border: 1px solid #ffffff;
+    border-radius: 9px 5px 5px 9px;
+    outline: none;
+}
+
+#searchForm {
+    display: flex;
+    align-items: center;
+}
+
+#ToolBarTop {
+    position: fixed; /* Position fixe pour rester en place */
+    top: 3%; /* Distance du haut de la page */
+    right: 2%; /* Distance de la droite de la page */
+    background-color: rgba(242, 242, 242, 0.8); /* Couleur de fond blanc semi-transparente */
+    border-radius: 15px; /* Rayon de courbure des coins */
+    padding: 2px; /* Espace intérieur pour séparer les images du bord */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ombre pour le contour */
+    z-index: 2; /* Assure que le conteneur est au-dessus des autres éléments */
+}
+
+#IconToolBarTop {
+    display: flex;
+    gap: 10px; /* Espace entre les images */
+}
+#IconToolBarTop img {
+    vertical-align: middle;
+    max-width: 100px; /* Largeur maximale des logos */
+    max-height: 100px; /* Hauteur maximale des logos */
+    width: auto; /* Ajuste automatiquement la largeur en fonction de la hauteur */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    margin: 6.5px; /* Marge entre chaque logo */
+    transition: box-shadow 0.3s; /* Ajoute une transition pour une animation fluide */
+    border-radius: 10px; /* Ajoute un léger arrondi aux coins */
+}
+
+#IconToolBarTop img:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8); /* Ajoute une ombre au survol */
+}
+#IconToolBarTop #note {
+    max-width: 40px;
+    max-height: 40px;
+}
+#IconToolBarTop #maps {
+    max-width: 40px;
+    max-height: 40px;
+}
+#IconToolBarTop #cloud {
+    max-width: 40px;
+    max-height: 40px;
+}
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+}
