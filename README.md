@@ -1,6 +1,6 @@
 # ChromeHome
 
-![ChromeHome Screenshot](https://raw.githubusercontent.com/atlas161/ChromeHome/tree/main/medias/images/Screenshot.png)
+![ChromeHome Screenshot](https://raw.githubusercontent.com/atlas161/ChromeHome/main/medias/images/Screenshot.png)
 
 ## Description
 
